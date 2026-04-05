@@ -42,39 +42,39 @@
 ### URL: api/v1/auth/register
 ### Method: POST
 ### Входные параметры:
-'''{
+```{
 "firstName": "string",
 "lastName": "string",
 "userName": "string",
 "password": "string",
 "captcha": "string"
-}'''
+}```
 ### Request Body:
-'''{
+```{
 "firstName": "ivan",
 "lastName": "ivanov",
 "userName": "ivan",
 "password": "568cdjWHG!",
 "captcha": "fyh-355gsf-jgjkj"
-}'''
+}```
 ### 201 Создано
-'''{
+```{
 "id": 123
 "message":"User Register Successfully."
-}'''
+}```
 ### 422 Ошибка валидации
-'''{
+```{
 "error": "invalid_password",
 "message":"Password must have..."
-}'''
+}```
 ### 409 Конфликт
-{
+```{
 "error": "user_already_exists", 
 "message":"User exists!"
-}
+}```
 ### 422 Ошибка валидации
-'''{
+```{
 "error": "captcha_invalid",
 "message":"Please verify reCaptcha to register!"
-}'''
+}```
 
